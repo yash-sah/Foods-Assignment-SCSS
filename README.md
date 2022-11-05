@@ -18,13 +18,13 @@ Layout SCSS file is used to incorporate nesting usage.
 
 Variables => Created all the Variables in a separate SCSS file. 
 
-Custom Properties => Aslo known as CSS Variables. Used in index.scss file in footer selector.
+Custom Properties => Aslo known as CSS Variables. Used in base.scss file for declaring global styles.
 
-Nesting => Used to nest CSS selectors. In index.scss file used nesting in nav, card and footer selectors. In contactMe.scss file used nesting in nav, card, social, location and footer selectors. In aboutMe.scss file used nesting in nav, carousel and footer.
+Nesting => Used to nest CSS selectors. In componenets and layout scss files. In contactMe.scss file used nesting in nav, card, social, location and footer selectors. In aboutMe.scss file used nesting in nav, carousel and footer.
 
-Interpolation => Used in a Sass stylesheet to embed the result of a SassScript expression into a chunk of CSS. Used @extend Interpolation in base.scss file.
+Interpolation => Used in a Sass stylesheet to embed the result of a SassScript expression into a chunk of CSS. Used @extend and @include Interpolation in components and layout file.
 
-Placeholder Selectors => It is a class selector, but it starts with a % and it's not included in the CSS output. Used in body selector in index.scss. Defined a %pseudoBody Placeholder selector and used @extend to use it inside body selector.
+Placeholder Selectors => It is a class selector, but it starts with a % and it's not included in the CSS output. Used in body selector in components.scss. Defined a %pseudoBody Placeholder selector and used @extend to use it inside body selector.
 
 Mixins => @mixin lets us create reusable css code. Created two separate header and footer scss files. They contain mixins which contain multiple css Properties. Used @import to import header & footer scss files in index.scss , contactMe.scss & aboutMe.scss files. Used @include inside base.scss , components.scss files under html selector to call the mixins. 
 
